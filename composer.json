@@ -1,0 +1,39 @@
+{
+  "name": "fof/auth-gitlab",
+  "description": "Allow users to log in with GitLab.",
+  "keywords": [
+    "flarum"
+  ],
+  "type": "flarum-extension",
+  "license": "MIT",
+  "require": {
+    "flarum/core": "^0.1.0-beta.8",
+    "omines/oauth2-gitlab": "^3.1.2",
+    "fof/extend": "^0.1.0"
+  },
+  "authors": [
+    {
+      "name": "Christian Lopez",
+      "email": "Christian.L@redevs.org",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "FoF\\Auth\\GitLab\\": "src/"
+    }
+  },
+  "extra": {
+    "flarum-extension": {
+      "title": "FoF GitLab Login",
+      "icon": {
+        "name": "fab fa-gitlab",
+        "backgroundColor": "#e74c3c",
+        "color": "#fff"
+      }
+    },
+    "flagrow": {
+      "discuss": ""
+    }
+  }
+}
