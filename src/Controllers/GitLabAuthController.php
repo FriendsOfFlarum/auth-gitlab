@@ -51,7 +51,7 @@ class GitLabAuthController extends AbstractOAuthController
      */
     protected function getAuthorizationUrlOptions(): array
     {
-        return ['scope' => 'read_user', 'open_id'];
+        return ['scope' => 'read_user'];
     }
 
     /**
