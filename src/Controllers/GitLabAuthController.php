@@ -51,7 +51,7 @@ class GitLabAuthController extends AbstractOAuthController
      */
     protected function getAuthorizationUrlOptions(): array
     {
-        return ['scope' => 'read_user'];
+        return ['scope' => 'read_user', 'open_id'];
     }
 
     /**
@@ -68,9 +68,9 @@ class GitLabAuthController extends AbstractOAuthController
     protected function setSuggestions(Registration $registration, $user, string $token)
     {
         $registration
-            ->suggestUsername(($user->getUsername()))
+            ->suggestUsername($user->getUsername())
             ->provideTrustedEmail($user->getEmail())
-            ->provideAvatar(($user->getAvatarUrl()))
+            ->provideAvatar($user->getAvatarUrl())
             ->setPayload($user->toArray());
     }
 }
