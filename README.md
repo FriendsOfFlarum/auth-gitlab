@@ -1,4 +1,4 @@
-# FoF GitLab Login
+# GitLab Login by FriendsOfFlarum
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg) [![Latest Stable Version](https://img.shields.io/packagist/v/fof/auth-gitlab.svg)](https://packagist.org/packages/fof/auth-gitlab)
 
@@ -21,7 +21,7 @@ php flarum cache:clear
 
 ### Setup via GitLab
 1. Go to https://gitlab.com/oauth/applications.
-2. Login if prompted.
+2. Log in if prompted.
 3. Set the name of the application to whatever you want it to be (it doesn't really matter).
 4. Enter your `Redirect Uri` which should be something like this: `https://myforum.com/auth/gitlab` (SSL is required).
 5. The only scope necessary is `read_user` so just tick that box.
