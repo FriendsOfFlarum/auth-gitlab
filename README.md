@@ -19,13 +19,13 @@ composer update fof/auth-gitlab
 php flarum cache:clear
 ```
 
-### Setup Via GitLab
-1. Go to https://gitlab.com/oauth/applications
-2. Login if prompted
-3. Set the name of the application to whatever you want
-4. Enter your `Redirect Uri` which should be something like this: `https://myforum.com/auth/gitlab` (SSL is required)
+### Setup via GitLab
+1. Go to https://gitlab.com/oauth/applications.
+2. Login if prompted.
+3. Set the name of the application to whatever you want it to be (it doesn't really matter).
+4. Enter your `Redirect Uri` which should be something like this: `https://myforum.com/auth/gitlab` (SSL is required).
 5. The only scope necessary is `read_user` so just tick that box.
-6. Copy your `Application Id` and `Secret` over to the extension's settings via your Flarum forum Admin CP & click "Save Settings"
+6. Copy your `Application Id` and `Secret` over to the extension's settings via your Flarum forum Admin CP & click "Save Settings".
 7. ??? ???
 8. PROFIT ONCE MORE!
 
@@ -33,3 +33,12 @@ php flarum cache:clear
 
 - [Packagist](https://packagist.org/packages/fof/auth-gitlab)
 - [GitHub](https://github.com/FriendsOfFlarum/auth-gitlab)
+
+Special thanks to [@datitisev](https://github.com/datitisev) for his AMAZING Flarum development tools! 
+
+See below for tools used in this project:
+
+- [fof/extend](https://github.com/FriendsOfFlarum/extend)
+- [@fof/components](https://github.com/FriendsOfFlarum/components)
+
+Time saved during development: **A LOT**.
