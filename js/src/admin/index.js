@@ -14,6 +14,9 @@ app.initializers.add('fof/auth-gitlab', () => {
           <StringItem key="fof-auth-gitlab.client_secret">
             {app.translator.trans('fof-auth-gitlab.admin.gitlab_settings.client_secret_label')}
           </StringItem>,
+          <StringItem key="fof-auth-gitlab.gitlab_domain">
+          {app.translator.trans('fof-auth-gitlab.admin.gitlab_settings.client_gitlab_domain')}
+          </StringItem>,
         ],
       })
     );
