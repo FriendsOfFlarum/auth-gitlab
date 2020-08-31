@@ -3,6 +3,7 @@ fof-auth-gitlab:
     gitlab_settings:
       client_id_label: Application ID
       client_secret_label: Secret
+      client_gitlab_domain: Application Domain
       title: FriendsOfFlarum GitLab Login
 
   forum:

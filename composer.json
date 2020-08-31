@@ -9,7 +9,7 @@
   "require": {
     "flarum/core": "^0.1.0-beta.8",
     "omines/oauth2-gitlab": "^3.1.2",
-    "fof/extend": "^0.1.0"
+    "fof/extend": ">=0.1.0"
   },
   "authors": [
     {

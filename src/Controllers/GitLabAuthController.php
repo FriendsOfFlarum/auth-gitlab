@@ -35,6 +35,7 @@ class GitLabAuthController extends AbstractOAuthController
             'clientId'     => $this->settings->get('fof-auth-gitlab.client_id'),
             'clientSecret' => $this->settings->get('fof-auth-gitlab.client_secret'),
             'redirectUri'  => $redirectUri,
+            'domain'       => $this->settings->get('fof-auth-gitlab.gitlab_domain'),
         ]);
     }
 
