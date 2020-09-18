@@ -31,12 +31,11 @@ class GitLabAuthController extends AbstractOAuthController
      */
     protected function getProvider(string $redirectUri): AbstractProvider
     {
-
         return new Gitlab([
             'clientId'     => $this->settings->get('fof-auth-gitlab.client_id'),
             'clientSecret' => $this->settings->get('fof-auth-gitlab.client_secret'),
             'redirectUri'  => $redirectUri,
-            'domain'       => $this->settings->get('fof-auth-gitlab.application_domain')
+            'domain'       => $this->settings->get('fof-auth-gitlab.application_domain'),
         ]);
     }
 
