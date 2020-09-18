@@ -3,7 +3,7 @@
 /*
  * This file is part of fof/auth-gitlab.
  *
- * Copyright (c) 2019 FriendsOfFlarum.
+ * Copyright (c) 2020 FriendsOfFlarum.
  *
  * For the full copyright and license information, please view the LICENSE.md
  * file that was distributed with this source code.
@@ -31,11 +31,12 @@ class GitLabAuthController extends AbstractOAuthController
      */
     protected function getProvider(string $redirectUri): AbstractProvider
     {
+
         return new Gitlab([
             'clientId'     => $this->settings->get('fof-auth-gitlab.client_id'),
             'clientSecret' => $this->settings->get('fof-auth-gitlab.client_secret'),
             'redirectUri'  => $redirectUri,
-            'domain'       => $this->settings->get('fof-auth-gitlab.gitlab_domain'),
+            'domain'       => $this->settings->get('fof-auth-gitlab.application_domain')
         ]);
     }
 

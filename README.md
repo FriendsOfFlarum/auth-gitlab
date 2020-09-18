@@ -4,6 +4,8 @@
 
 A [Flarum](http://flarum.org) extension. Allow users to log in with GitLab.
 
+
+
 ### Installation
 
 Use [Bazaar](https://discuss.flarum.org/d/5151-flagrow-bazaar-the-extension-marketplace) or install manually with composer:
@@ -26,13 +28,21 @@ php flarum cache:clear
 4. Enter your `Redirect Uri` which should be something like this: `https://myforum.com/auth/gitlab` (SSL is required).
 5. The only scope necessary is `read_user` so just tick that box.
 6. Copy your `Application Id` and `Secret` over to the extension's settings via your Flarum forum Admin CP & click "Save Settings".
-7. ??? ???
-8. PROFIT ONCE MORE!
+7. (Optional) You can also add an optional base URL for self-hosted instances if needed.
+8. ??? ???
+9. PROFIT ONCE MORE!
 
 ### Links
 
 - [Packagist](https://packagist.org/packages/fof/auth-gitlab)
 - [GitHub](https://github.com/FriendsOfFlarum/auth-gitlab)
+
+### Notes
+
+- 09/18/2020 
+    - As of Flarum Beta 14, this extension will be superseded by [FriendsOfFlarum Oauth](https://github.com/FriendsOfFlarum/oauth).
+
+### Acknowledgements 
 
 Special thanks to [@datitisev](https://github.com/datitisev) for his AMAZING Flarum development tools! 
 
